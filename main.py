@@ -35,6 +35,15 @@ def recur_print(xs):
         print(xs[0])
         recur_print(xs[1:])
 
+def print_only_positive_number(x):
+    if x >= 0:
+        print(x)
+    else:
+        raise Exception(f"I print only positive numbers, got: {x}")
+    
+print_only_positive_number(5)
+# print_only_positive_number(-5)
+
 xs = [1, 2, 3, 4, 5]
 
 for_print(xs)
@@ -52,12 +61,39 @@ def square(side_len):
 
 square(3)
 
-def triangle(base_len):
+
+def rectangle(a, b):
+    for _ in range(a):
+        pass
+        
+        print()
+
+rectangle(3, 5)
+# *****
+# *****
+# *****
+
+def right_triangle(base_len):
     pass
 
-triangle(5)
+right_triangle(5)
 # *
 # **
 # ***
 # ****
+# *****
+
+def triangle(base_len):
+    pass
+
+triangle(3)
+#  *
+# ***
+
+triangle(4)
+# throw exception invalid input
+
+triangle(5)
+#   *  
+#  ***
 # *****
